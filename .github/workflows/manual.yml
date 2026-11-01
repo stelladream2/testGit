@@ -1,10 +1,6 @@
 on:
   workflow_dispatch:
-    inputs:
-      target:
-        description: '배포 대상'
-        type: choice
-        options: [ staging, production ]
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
